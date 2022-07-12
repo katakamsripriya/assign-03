@@ -65,6 +65,29 @@ import unittest
 def rotate_matrix(lst, side):
   rotated_list = []
   # write your code here
+  r0, r1, r2 = [], [], []
+  x = 0
+  if side=="left":
+    for i in lst:
+      r0.append(i[x])
+      r1.append(i[x+1])
+      r2.append(i[x+2])
+    rotated_list.append(r2)
+    rotated_list.append(r1)
+    rotated_list.append(r0)
+  elif side=="right":
+    for i in lst:
+       r0.append(i[x])
+       r1.append(i[x+1])
+       r2.append(i[x+2])
+    r2.reverse()
+    r1.reverse()
+    r0.reverse()
+    rotated_list.append(r0)
+    rotated_list.append(r1)
+    rotated_list.append(r2)
+  else:
+       pass
   return rotated_list
 
 
