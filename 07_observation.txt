@@ -1,1 +1,34 @@
 # Write down your observations and what did you learn new - in this file
+
+Question1
+In this question we iterate each list with the help of a for loop and in this for loop we
+again use one more loop in which we check if the no of 0's is equal to the number of columns
+and if they are equal we append the row number into a new list and retunrn it.
+
+Question 2
+In this question we traverse each row with the help of a for loop and then we sort each list
+with the help of .sort() function and we append it into a new list and return it.
+
+Question 3
+In this question we first convert the given 1-D list into a 2-D list with the help of the shape
+given in the question and then we run a for loop till the end of the main list and we take a
+variable j=0 and compare the shape with 0 if it is greater we append the list into a new list
+and we repeat the process by incrementing j untill whole of the 2-D list is sorted.
+
+Question 4
+In this question we first run a for loop on the given input string and then we check for presence
+of the given character and if the condition is true we increment the counter and when we c==1
+we use .find() method to find the first occurence of the character and then we use strign slicing ro
+to swap the occurences of other character around the given character
+Question 5
+In this question we first take three list say r0 r1 r2 and then we check if the side is left
+then we take a variable x=0 and run a for loop on the input nested list and then we append
+i[0] i[1] and i[2] to r0 r1 r2 respectively and then we append this sub-list into a new list and
+return it
+if the side is right we repeat the whole process and then we reverse the list
+and return the list
+Question 6
+In this question we first we run a for loop on the given dict by using d.values and then we stor the
+max and min values in two separate variables and then we store there indexes of the
+max and min valules in two variables and now append then into a dict and then we use the .get()
+function to get key with max and min values.
