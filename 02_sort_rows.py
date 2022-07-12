@@ -57,6 +57,10 @@ import unittest
 
 def sort_rows(lst):
   sorted_list = []
+  for i in lst:
+    i.sort()
+    sorted_list.append(i)
+
 
   return sorted_list
 
