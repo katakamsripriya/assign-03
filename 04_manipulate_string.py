@@ -14,6 +14,18 @@ def manipulate_string(S,C):
   i = 0
   ansst = ""
   # write your code here
+  for j in S:
+    if j == C:
+      i += 1
+  if i == 1:
+    a = S.find(C)
+    ansst = S[:a-1] + S[a+1] + C + S[a-1] + S[a+2:]
+    return ansst
+  elif i >1:
+    a = S.find(C)
+    x = S[:a-1] + S[a+1] + C + S[a-1] + S[a+2:]
+    v = S.rfind(C)
+    ansst = x[:v-1] + x[v+1] + C + x[v-1] + x[v+2:]
   return ansst
 
 
