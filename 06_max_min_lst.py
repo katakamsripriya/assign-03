@@ -29,6 +29,20 @@ def find_max_min_dict(d1):
   dmax = dict()
   dmin = dict()
   #write your code here
+  max_lst = []
+  min_lst = []
+  for i in d1.values():
+    x = max(i)
+    y = min(i)
+    max_lst.append(x)
+    min_lst.append(y)
+  m = max(max_lst)
+  n = min(min_lst)
+  d1 = max_lst.index(m)
+  d2 = min_lst.index(n)
+  s = {0:'a', 1:'b', 2:'c'}
+  mxmn_lst.append(s.get(d1))
+  mxmn_lst.append(s.get(d2))
   return mxmn_lst
 
 #DO NOT TOUCH THE BELOW CODE
