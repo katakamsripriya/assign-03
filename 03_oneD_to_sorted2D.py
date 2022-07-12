@@ -30,6 +30,19 @@ import unittest
 
 def oneD_to_sorted2D(lst):
   sorted_list = []
+   lst.sort()
+  b=int(shape[0])
+  c=int(shape[2])
+  l=[]
+  j=0
+  for i in range(0,len(lst)):
+    if(j>=c):
+      sorted_list.append(l)
+      l=[]
+      j=0
+    l.append(lst[i])
+    j=j+1
+  sorted_list.append(l)
 
   return sorted_list
 
